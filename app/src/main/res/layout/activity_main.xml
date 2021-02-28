@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/play_or_pause_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_play_circle_filled_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/stop_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/stop_btn_drawable"
+            android:layout_marginRight="10dp"/>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="150dp"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:src="@drawable/xingxing"
+            android:layout_height="40dp"
+            android:id="@+id/next_btn"
+            android:text="下一首"/>
+
+    </LinearLayout>
+
+</LinearLayout>
